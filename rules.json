@@ -2,11 +2,9 @@
 	{
 		"id": 1,
 		"priority": 2,
-		"action": {
-			"type": "allow"
-		},
+		"action": { "type": "allow" },
 		"condition": {
-			"regexFilter": "^https?://(www\\.)?google\\.com(\\.ua)?/search\\?.*(?:-site:ru|lr=lang_uk)",
+			"regexFilter": "^https?://(?:www\\.)?google\\.com(?:\\.ua)?/search\\?(?:.*&)?q=[^&]*(?:-|%2D)site(?::|%3[Aa])ru.*$",
 			"resourceTypes": ["main_frame"]
 		}
 	},
@@ -16,22 +14,20 @@
 		"action": {
 			"type": "redirect",
 			"redirect": {
-				"regexSubstitution": "\\1+-site:ru+-site:su+-site:xn--p1ai&lr=lang_uk"
+				"regexSubstitution": "\\1\\2+-site:ru+-site:su+-site:xn--p1ai\\3&lr=lang_uk"
 			}
 		},
 		"condition": {
-			"regexFilter": "^(https?://(?:www\\.)?google\\.com(?:\\.ua)?/search\\?.*)$",
+			"regexFilter": "^(https?://(?:www\\.)?google\\.com(?:\\.ua)?/search\\?(?:.*&)?q=)([^&]*)(.*)$",
 			"resourceTypes": ["main_frame"]
 		}
 	},
 	{
 		"id": 3,
 		"priority": 2,
-		"action": {
-			"type": "allow"
-		},
+		"action": { "type": "allow" },
 		"condition": {
-			"regexFilter": "^https?://(www\\.)?bing\\.com/search\\?.*-site:ru",
+			"regexFilter": "^https?://(?:www\\.)?bing\\.com/(?:images/)?search\\?(?:.*&)?q=[^&]*(?:-|%2D)site(?::|%3[Aa])ru.*$",
 			"resourceTypes": ["main_frame"]
 		}
 	},
@@ -41,11 +37,44 @@
 		"action": {
 			"type": "redirect",
 			"redirect": {
-				"regexSubstitution": "\\1+-site:ru+-site:su+-site:xn--p1ai&setlang=uk"
+				"regexSubstitution": "\\1\\2+-site:ru+-site:su+-site:xn--p1ai\\3&setlang=uk"
 			}
 		},
 		"condition": {
-			"regexFilter": "^(https?://(?:www\\.)?bing\\.com/search\\?.*)$",
+			"regexFilter": "^(https?://(?:www\\.)?bing\\.com/(?:images/)?search\\?(?:.*&)?q=)([^&]*)(.*)$",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 5,
+		"priority": 3,
+		"action": { "type": "allow" },
+		"condition": {
+			"regexFilter": "^https?://(?:www\\.)?google\\.com(?:\\.ua)?/search\\?(?:.*&)?udm=28(?:&|$)",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 6,
+		"priority": 4,
+		"action": {
+			"type": "redirect",
+			"redirect": { "regexSubstitution": "\\1\\2" }
+		},
+		"condition": {
+			"regexFilter": "^(https?://[a-z.]+/search\\?(?:.*&)?udm=28&(?:.*&)?q=[^&]*?)\\+-site:ru\\+-site:su\\+-site:xn--p1ai(.*)$",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 7,
+		"priority": 4,
+		"action": {
+			"type": "redirect",
+			"redirect": { "regexSubstitution": "\\1\\2" }
+		},
+		"condition": {
+			"regexFilter": "^(https?://[a-z.]+/search\\?(?:.*&)?q=[^&]*?)\\+-site:ru\\+-site:su\\+-site:xn--p1ai(&(?:.*&)?udm=28.*)$",
 			"resourceTypes": ["main_frame"]
 		}
 	}
