@@ -1,4 +1,11 @@
+<div align="center">  
+    <img src="https://github.com/2boom-ua/noru-ext/blob/main/icons/icon_128.png?raw=true" alt="" width="128" height="128">
+</div>
+
+
 # Noru Extension
+
+![Version](https://img.shields.io/badge/version-1.0-green.svg)
 
 Browser extension that adds search filters to Google and Bing.
 
@@ -28,3 +35,7 @@ Works independently of the default search engine set in the browser. Requests th
 - Only matches `www.google.com`, `google.com`, `www.google.com.ua`, `google.com.ua`, `www.bing.com`, `bing.com`.
 - Does not affect the browser's default search engine or the address bar search.
 - `lang:uk` is not used for Bing (it breaks the query); `setlang=uk` is used instead.
+
+## License
+
+Copyright © 2boom, 2026.
