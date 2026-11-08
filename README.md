@@ -1,5 +1,5 @@
 <div align="center">  
-    <img src="https://github.com/2boom-ua/noru-ext/blob/main/icons/icon_128.png?raw=true" alt="" width="128" height="128">
+    <img src="https://github.com/2boom-ua/noru-ext/blob/main/icons/icon128.png?raw=true" alt="" width="128" height="128">
 </div>
 
 
