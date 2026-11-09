@@ -77,5 +77,32 @@
 			"regexFilter": "^(https?://[a-z.]+/search\\?(?:.*&)?q=[^&]*?)\\+-site:ru\\+-site:su\\+-site:xn--p1ai(&(?:.*&)?udm=28.*)$",
 			"resourceTypes": ["main_frame"]
 		}
+	},
+    	{
+		"id": 8,
+		"priority": 5,
+		"action": { "type": "allow" },
+		"condition": {
+			"regexFilter": "^https?://(?:www\\.)?google\\.com(?:\\.ua)?/search\\?(?:.*&)?q=[^&]*(?:/|%2[Ff])",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 9,
+		"priority": 5,
+		"action": { "type": "allow" },
+		"condition": {
+			"regexFilter": "^https?://(?:www\\.)?bing\\.com/(?:images/)?search\\?(?:.*&)?q=[^&]*(?:/|%2[Ff])",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+    	{
+		"id": 10,
+		"priority": 5,
+		"action": { "type": "allow" },
+		"condition": {
+			"regexFilter": "^https?://(?:www\\.)?(?:google\\.com(?:\\.ua)?|bing\\.com)/(?:images/)?search\\?(?:.*&)?q=(?:[^&]*(?:\\+|%20))?(?:inurl|site|intitle)(?::|%3[Aa])",
+			"resourceTypes": ["main_frame"]
+		}
 	}
 ]
