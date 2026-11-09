@@ -24,15 +24,19 @@ Works independently of the default search engine set in the browser. Requests th
 
 ## Install (unpacked)
 
-1. Open `chrome://extensions` or `edge://extensions`.
+1. clone the repository:
+```bash
+git clone https://github.com/2boom-ua/noru-ext.git
+```
 2. Enable "Developer mode".
-3. Click "Load unpacked" and select the `noru-extension` folder.
+3. Click "Load unpacked" and select the `noru-ext` folder.
 
 ## Files
 
 - `manifest.json` — extension manifest (MV3).
 - `rules.json` — declarativeNetRequest rules.
-- `icons/icon128.png` — icon.
+- `background.js` — service worker (on/off toggle).
+- `icons/` — icon assets (active and disabled states).
 
 ## Limitations
 
