@@ -5,7 +5,7 @@
 
 # Noru Extension
 
-![Version](https://img.shields.io/badge/version-1.3-green.svg)
+![Version](https://img.shields.io/badge/version-1.4-green.svg)
 
 Browser extension that adds search filters to Google and Bing.
 
