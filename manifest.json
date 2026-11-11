@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Noru",
-	"version": "1.3",
+	"version": "1.4",
 	"description": "Redirects Google and Bing search requests to a filtered version (no ru/su/рф).",
 	"author": "(c) 2boom 2026",
 	"icons": {
