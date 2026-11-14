@@ -5,7 +5,7 @@
 
 # Noru Extension
 
-![Version](https://img.shields.io/badge/version-1.4-green.svg)
+![Version](https://img.shields.io/badge/version-1.5-green.svg)
 
 Browser extension that adds search filters to Google and Bing.
 
@@ -13,10 +13,12 @@ Browser extension that adds search filters to Google and Bing.
 
 When you open `google.com/search?...` or `bing.com/search?...` manually, the extension redirects the request to a filtered version:
 
-- Google: adds `-site:ru -site:su -site:xn--p1ai` and `lr=lang_uk`
-- Bing: adds `-site:ru -site:su -site:xn--p1ai` and `setlang=uk`
+- **Google**: adds `-site:ru -site:su -site:xn--p1ai -site:kz -site:tj -site:by -site:uz -site:kg` and `lr=lang_uk`
+- **Bing**: adds `-site:ru -site:su -site:xn--p1ai -site:kz -site:tj -site:by -site:uz -site:kg` and `setlang=uk`
 
-Works independently of the default search engine set in the browser. Requests that already contain the filters are not modified again.
+This hides results from Russia, Kazakhstan, Tajikistan, Belarus, Uzbekistan, and Kyrgyzstan.
+
+The filter works independently of the default search engine set in the browser. Requests that already contain the filters are not modified again.
 
 ### From Chrome Web Store or Edge Add-ons
 [![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/noru/aepmjljigehmdjoimgjkbodekpdjbana)
