@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Noru",
 	"version": "1.7",
-	"description": "Redirects Google and Bing search requests to a filtered version (no ru/su/рф).",
+	"description": "Redirects Google and Bing search requests to a filtered version (no ru, su, рф, kz, by, uz, kg, tj).",
 	"author": "(c) 2boom 2026",
 	"icons": {
 		"16": "icons/icon16.png",
