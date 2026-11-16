@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Noru",
-	"version": "1.4",
+	"version": "1.7",
 	"description": "Redirects Google and Bing search requests to a filtered version (no ru/su/рф).",
 	"author": "(c) 2boom 2026",
 	"icons": {
@@ -32,7 +32,8 @@
 		"*://www.google.com.ua/*",
 		"*://google.com.ua/*",
 		"*://www.bing.com/*",
-		"*://bing.com/*"
+		"*://bing.com/*",
+		"https://raw.githubusercontent.com/*"
 	],
 	"declarative_net_request": {
 		"rule_resources": [

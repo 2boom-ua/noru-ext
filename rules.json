@@ -14,7 +14,7 @@
 		"action": {
 			"type": "redirect",
 			"redirect": {
-				"regexSubstitution": "\\1\\2+-site:ru+-site:su+-site:xn--p1ai+-site:kz+-site:tj+-site:by+-site:uz+-site:kg\\3&lr=lang_uk"
+				"regexSubstitution": "\\1\\2+-site:ru+-site:su+-site:xn--p1ai+-site:kz+-site:tj+-site:by+-site:uz+-site:kg\\3&hl=uk"
 			}
 		},
 		"condition": {
